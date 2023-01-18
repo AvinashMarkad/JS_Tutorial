@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myform" action="">
+        <select name="select" id="select" size="">
+            <option value="">Rose</option>
+            <option value="">Lotes</option>
+            <option value="">Mogara</option>
+        </select>
+        <br>
+        <br>
+        <input type="radio" value="1" name="btn" id="btn1" checked="true" onclick="change(this.value)">Flowers
+        <input type="radio" name="btn" id="btn2" value="2" onclick="change(this.value)">Vegetables
+        <br>
+        <br>
+        <input type="reset" value="Submit" onclick="">
+    </form>
+</body>
+<script>
+    function change(elementvalue){
+        with(document.forms.myform){
+            if(elementvalue==2){
+                select[0].text="Potato";
+                select[0].value=1;
+                select[1].text="Tomato";
+                select[1].value=2;
+                select[2].text="Vang";
+                select[2].value=3;
+            }
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onchange</title>
+</head>
+<body>
+    <form name="myform" action="" method="post">
+        <select name="select" id="select" onchange="choice(this.value)">
+            <option value="index1.html">google</option>
+            <option value="index2.html">MSBTE</option>
+            <option value="index3.html">Yahoo</option>
+        </select>
+    </form>
+</body>
+<script>
+    function choice(a){
+        with(document.forms.myform){
+
+        if(a!="")
+        {
+            window.location=a;
+        }
+    }
+    }
+</script>
+</html>

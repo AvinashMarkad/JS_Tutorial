@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myform" action="" method="post">
+        <label for="">Username:</label>
+        <input type="text" id="uname">
+        <br>
+        <br>
+        <label for="">Password:</label>
+        <input type="password" id="pass">
+        <br>
+        <br>
+        <input type="button" value="Submit" onclick="Accept()">
+    </form>
+</body>
+<script>
+    function Accept(){
+
+    var a=document.getElementById("uname").value;
+    var b=document.getElementById("pass").value;
+
+    document.write("Username:"+a+
+                    "<br> Password:"+b)
+    }
+</script>
+</html>

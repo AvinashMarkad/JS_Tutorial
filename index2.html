@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>HTML Form</title>
+    <script language="javascript" type="text/javascript">
+        function selection() {
+            var x = "You selected: ";
+            with (document.forms.myform) {
+                if (a.checked == true) {
+                    x += a.value + " ";
+                }
+                if (b.checked == true) {
+                    x += b.value + " ";
+                }
+                if (o.checked == true) {
+                    x += o.value + " ";
+                }
+                if (p.checked == true) {
+                    x += p.value + " ";
+                }
+                if (g.checked == true) {
+                    x += g.value + " ";
+                }
+                document.write(x);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form name="myform" action="" method="post">
+        Select Your Favourite Fruits: <br>
+        <input type="checkbox" name="a" value="Apple">Apple
+        <input type="checkbox" name="b" value="Banana">Banana
+        <input type="checkbox" name="o" value="Orange">Orange
+        <input type="checkbox" name="p" value="Pear">Pear
+        <input type="checkbox" name="g" value="Grapes">Grapes
+        <input type="reset" value="Show" onclick="selection()">
+    </form>
+</body>
+
+</html>
+</form>
+</body>
+
+</html>

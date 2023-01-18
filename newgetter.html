@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Functions</title>
+<body>
+<script language="Javascript">
+var myCar = {
+ /* Data properties */
+ defColor: "blue", 
+ defMake: "Toyota",
+ 
+ /* Accessor properties (getters) */
+ get color() { 
+ return this.defColor; 
+ }, 
+ get make() { 
+ return this.defMake; 
+ },
+ 
+ /* Accessor properties (setters) */
+ set color(newColor) {
+this.defColor = newColor;
+ },
+ set make(newMake) {
+this.defMake = newMake;
+ }
+};
+document.write("Car color:" + myCar.color + " Car Make: "+myCar.make)
+/* Calling the setter accessor properties */
+myCar.color = "red";
+myCar.make = "Audi";
+/* Checking the new values with the getter accessor properties */
+document.write("<p>Car color:" + myCar.color); // red
+document.write(" Car Make: "+myCar.make); //Audi
+</script>
+</head>
+</body>
+</html>

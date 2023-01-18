@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <script>
+        function storeCookie() {
+            var pwd = document.getElementById('pwd').value
+          var b=  document.cookie = "Password=" + pwd + ";"
+            alert("Cookie Stored\n" + b)
+        }
+    </script>
+</head>
+
+<body>
+    <form name="myForm">
+        Enter Username <input type="text" id="uname" /><br />
+        Enter Password <input type="password" id="pwd" /><br />
+        <input type="button" value="Submit" onclick="storeCookie()" />
+        <p id="panel"></p>
+    </form>
+</body>
+
+</html>

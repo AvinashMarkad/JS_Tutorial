@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vovel count</title>
+</head>
+<script>
+   function vocelcounter(str)
+   {
+    var result=str.match(/aeiou/gi);
+
+    return result === null ? 0 : result.length;
+   }
+var a=vocelcounter("aavinash");
+document.write(a);
+</script>
+<body>
+    
+</body>
+</html>

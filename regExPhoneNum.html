@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        Enter Your Number : <input type="text" id="phone">
+        <br>
+        <br>
+        <input type="button" value="Check" onclick="phonenum()">
+    </form>
+</body>
+<script>
+    function phonenum()
+    {
+        var RegEx=/^\(?([0-9]{3})\)?[-.]?([0-9]{3})[-.]?([0-9]{4})$/;
+
+        <!-- var RegEx=/(25[0-5]|2[0-4][0-9]|[0-1]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[0-1]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[0-1]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[0-1]?[0-9][0-9]?)$/; -->
+
+        var phonenum=document.getElementById("phone").value;
+
+        var result=RegEx.test(phonenum);
+
+        alert(result);
+    }
+</script>
+</html>

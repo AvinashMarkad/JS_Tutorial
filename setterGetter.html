@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var user={
+        fname:"Avinash",
+        lname:"Markad",
+
+        get first(){
+            return this.fname;
+        },
+        get last(){
+            return this.lname;
+        },
+        set first(newfirst){
+            this.first;
+        },
+        set last(newlast){
+            this.last;
+        }
+        
+    }
+
+    document.write(user.fname+"&nbsp;"+user.lname);
+    user.fname="Raaj";
+    user.lname="Markad";
+    document.write(user.fname+"&nbsp;"+user.lname);
+
+</script>
+<body>
+    
+</body>
+</html>
